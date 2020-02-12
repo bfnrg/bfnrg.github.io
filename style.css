@@ -1,0 +1,168 @@
+/*/@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');*/
+@import url("https://use.typekit.net/vmk8wxw.css");
+
+html, body {
+  height: 100%;
+  width: 100%;
+  /*font-family: source-han-serif-tc, serif; */
+  font-family: source-han-sans-traditional, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  color: #222;
+  background-color: #fbf6ed;
+}
+
+.navbar {
+  /*background-image: radial-gradient(circle, rgba(242,223,186,0.5), rgba(242,223,186,0.7));*/
+  background-color: #fbf6ed;
+  padding: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar-nav {
+  padding: 1rem;
+  text-align: center;
+}
+
+.navbar-nav > li{
+  padding: 0 5px;
+}
+
+.dropdown-menu {
+  padding-bottom: 1rem;
+  border: none;
+  background-color: #fbf6edd0;
+  text-align: center;
+}
+
+.dropdown-item:hover{
+  background-color: #f5e8cfd0;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 30%;
+  max-height: 500px;
+  min-width: auto;
+}
+
+.carousel-caption {
+  text-align:center;
+  top:50%;
+  bottom:auto;
+  -webkit-transform:translate(0, -50%);
+  -ms-transform:translate(0, -50%);
+  transform:translate(0, -50%);
+}
+
+.carousel-caption h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 350%;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-shadow: 0.5px 0.5px 10px #919191;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("img/yangmingshan.jpeg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.welcome {
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 2.5rem;
+  text-align: center;
+}
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+  }
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 576px) {
+  
+}
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  height: 100%;
+  margin: 0 !important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+#fixed {
+  background-image: url('img/mac.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+
+
+
+
+
+
